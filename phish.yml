@@ -1,0 +1,24 @@
+name: Send Phishing Emails
+on:
+  workflow_dispatch:
+    inputs:
+      target_email:
+        description: 'Victim email'
+        required: true
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Send Email
+      uses: dawidd6/action-send-mail@v3
+      with:
+        server_address: smtp.gmail.com
+        server_port: 587
+        username: ${{ secrets.riskysanchezium@gmail.com }}
+        password: ${{ secrets.uzny ilbj izeo ybjg }}
+        subject: Action Required: Unusual Activity Detected
+        to: ${{ github.event.inputs.target_email }}
+        from: security@americanexpress.com
+        body_file: email.html
+        html: true
