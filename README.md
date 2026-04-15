@@ -1,10 +1,8 @@
 # Amex-security-verify
-## This repository is designed to simulate a real live threat actor based phishing campaign attempt
-## These tools will be prohibited to use only within the written legal parameters of the tests scope
-## DO NOT USE THIS FOR ANYTHING UNETHICAL OR ILLEGAL
-## THIS IS FOR EDUCATIONAL AND PROFESSIONAL USE ONLY
+### This repository is designed to simulate a real live threat actor based phishing campaign attempt. These tools will be prohibited to use only within the written legal parameters of the tests scope
+### DO NOT USE THIS FOR ANYTHING UNETHICAL OR ILLEGAL. THIS IS FOR EDUCATIONAL AND PROFESSIONAL USE ONLY
 
-–---------------------------------------–------------------------------------------------------------------
+–---------------------------------------–-----------------------------------------------
 ENGAGEMENT ATTACK CHAIN STEPS:	
 
 
@@ -79,7 +77,7 @@ ENGAGEMENT ATTACK CHAIN STEPS:
 14. Report Generation
     $ cat logs.txt | grep -E "(username|card_number|cvv)" > pentest_report.txt
 
-–---------------------------------------–--------------------------------------------------------------------
+–---------------------------------------–------------------------------------------------
 
 validate.py
 
@@ -92,7 +90,7 @@ for line in creds.split('===')[1:]:
         # Test Amex login (customize)
         print(f"Testing {user}:{passw}")
 
-–---------------------------------------–--------------------------------------------------------------------
+–---------------------------------------–-----------------------------------------------
 
 # In case of emergency use immediate kill all command sequence below
 
